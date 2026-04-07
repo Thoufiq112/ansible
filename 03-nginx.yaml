@@ -7,5 +7,5 @@
      state: present
    - name: start the nginx
      ansibe.builtin.service:
-     name: nginx
-     state: started
+    - name: nginx
+       state: started
