@@ -3,19 +3,19 @@
   connection: local
   vars_prompt:
    
-   - name: COURSE
-     prompt: Please enter COURSE name
-     private: false
+    - name: COURSE
+      prompt: Please enter COURSE name
+      private: false
    
-   - name: DURATION
-     prompt: Please enter DURATION
-     private: false
-   
-   - name: TRAINER
-     prompt: Please enter TRAINER name
-     private: false
-     
-     tasks: 
-   - name: print course information
-     ansible.builtin.debug:
-       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+    - name: DURATION
+      prompt: Please enter DURATION
+      private: false
+    
+    - name: TRAINER
+      prompt: Please enter TRAINER name
+      private: false
+      
+      tasks: 
+    - name: print course information
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
