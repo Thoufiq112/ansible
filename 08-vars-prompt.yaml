@@ -6,9 +6,11 @@
    - name: COURSE
      prompt: Please enter course name
      private: false
+   
    - name: DURATION
      prompt: Please enter Duration
      private: false
+   
    - name: TRAINER
      prompt: Please enter trainer name
      private: false
