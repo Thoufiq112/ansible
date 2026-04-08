@@ -11,6 +11,7 @@
    - name: TRAINER
      prompt: Please enter trainer name
      private: false
+     
      tasks: 
   -  name: print course information
      ansible.builtin.debug:
