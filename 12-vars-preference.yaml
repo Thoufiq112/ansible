@@ -1,21 +1,22 @@
 - name: variables 
   hosts: local
   connection: local
-  # vars: 
-  #  GREET: "PLAY"
-  # vars_files:
-  # - COURSE.yaml
-  # vars_prompt: 
-  # - name: GREET
-  #   prompt: Enter the value
-  #   private: false 
+  vars: 
+   GREET: "PLAY"
+  vars_files:
+  - COURSE.yaml
+  vars_prompt: 
+  - name: GREET
+    prompt: Enter the value
+    private: false 
   tasks: 
   - name: print the variables
-    # vars:
-    #   GREET: "TASK"
+    vars:
+      GREET: "TASK"
     ansible.builtin.debug:
      msg: "Hello from {{ GREET }}"
 
+# order of preference 
 #1. command line or ARGS
 #2. Task
 #3. Files
